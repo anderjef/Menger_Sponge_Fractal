@@ -1,13 +1,13 @@
-//started 09/05/2019
-//inspiration: https://www.youtube.com/watch?v=LG8ZK-rRkXo
+//Jeffrey Andersen
 
-float a = 0;
+float rotation = 0;
 ArrayList<Box> sponge = new ArrayList<Box>();
 
 void setup() {
   size(400, 400, P3D);
   Box b = new Box(0, 0, 0, 200);
   sponge.add(b);
+  noStroke();
 }
 
 void mousePressed() {
@@ -20,14 +20,13 @@ void mousePressed() {
 
 void draw() {
   background(0);
-  noStroke();
   lights();
   translate(width / 2, height / 2);
-  rotateX(a);
-  rotateY(2 * a);
-  rotateZ(3 * a);
+  rotateX(rotation);
+  rotateY(2 * rotation);
+  rotateZ(3 * rotation);
   for (Box b : sponge) {
     b.show();
   }
-  a += 0.005;
+  rotation += 0.005;
 }
