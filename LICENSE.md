@@ -1,4 +1,4 @@
-# Lorenz_Attractors
+# Menger Sponge Fractal
 ### Copyright
 (c) © 2021 Jeffrey Andersen
 
