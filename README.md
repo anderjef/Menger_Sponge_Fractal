@@ -55,7 +55,7 @@ Current version: 0.1.0
 
 ### Operation
 
-Click the display to increase the definition of the fractal, then sit back, relax, and enjoy! Note that simulation speed decreases exponentially with the number of simulated fractal levels.
+Click the display to increase the definition of the fractal. Use the up and down arrow keys to scale (up and down respectively) each box in the fractal. Use the left and right arrow keys to respectively lower and raise the amount by which the size of children boxes (generated upon click) are shrunk by. Use the f and s keys to speed up and slow down the rotation rate of the fractal, respectively. Review the exact variable values in the console. Sit back, relax, and enjoy! Note that simulation speed decreases exponentially with the number of simulated fractal levels.
 
 ## Contributions
 

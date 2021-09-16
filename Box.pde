@@ -1,7 +1,7 @@
 //Jeffrey Andersen
 
 class Box {
-  PVector pos;
+  PVector pos; //position
   float size;
   
   Box(float x, float y, float z, float _size) {
@@ -15,7 +15,7 @@ class Box {
       for (int y = -1; y < 2; y++) {
         for (int z = -1; z < 2; z++) {
           if (abs(x) + abs(y) + abs(z) > 1) {
-            float newSize = size / 3;
+            float newSize = size / childBoxReductionDivisor;
             Box b = new Box(pos.x + x * newSize, pos.y + y * newSize, pos.z + z * newSize, newSize);
             boxes.add(b);
           }
@@ -28,7 +28,7 @@ class Box {
   void show() {
     pushMatrix();
     translate(pos.x, pos.y, pos.z);
-    box(size);
+    box(size / showBoxDivisor);
     popMatrix();
   }
 }
